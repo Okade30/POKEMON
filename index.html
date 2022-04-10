@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEMON</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/pokebola.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <section>
+        <!-- circulo -->
+        <div class="circle"></div>
+        <!-- Parte del encabezado -->
+        <header>
+            <a href="#"><img src="./img/pokemon.png" class="logo" alt=""></a>
+
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Galeria">Galeria</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </header>
+
+        <!-- contenido -->
+        <div class="content">
+            <div class="textbox">
+                <h2>Vamos <br><span> ¡Mostrémosle todo nuestro poder!</span></h2>
+                <p>Los Pokémon son criaturas de todo tipo de formas y tamaños que viven en un medio salvaje o junto
+                    a los seres humanos. La mayoría de los Pokémon solo hablan para decir sus nombres. En la actualidad,
+                    hay más de 700 criaturas que habitan el universo Pokémon. Adentrate en la presente pagína para
+                    conocer algunas de sus curiosidades y algunos de los pokemons más famosos</p>
+                <a href="https://www.pokemon.com/el/">¡Conoce más sobre ellos!</a>
+            </div>
+
+            <!-- Imagen pokemon -->
+            <div class="imgbox">
+                <img src="./img/charmander.png" class="pokemon" alt="">
+            </div>
+        </div>
+
+        <!-- Seleccionar pokemon -->
+        <ul class="opcion">
+            <li><img src="./img/charmander.png"
+                    onclick="imgSlider('./img/charmander.png');changeCircleColor('#e0663a')" alt=""></li>
+            <li><img src="./img/pikachu.png"
+                    onclick="imgSlider('./img/pikachu.png');changeCircleColor('#0d0708')" alt=""></li>
+            <li><img src="./img/bulbasor.png"
+                    onclick="imgSlider('./img/bulbasor.png');changeCircleColor('#1e7676')" alt=""></li>
+        </ul>
+
+        <!-- redes -->
+        <ul class="redes">
+            <li><a href="https://www.facebook.com/profile.php?id=100003654763451"><img
+                        src="./img/facebook-black.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/alex_okade/?hl=es-la"><img src="./img/instagram-black.png"
+                        alt=""></a></li>
+            <li><a href="mailto:alexsanchezdev840@gmail.com?subject=Interesado%20en%20sus%20servicios"><img
+                        src="./img/google-plus.png" width="41px" alt=""></a></li>
+        </ul>
+    </section>
+
+
+    <!-- VIDEOS CON PARRAFOS -->
+
+    <div class="banner">
+        <video src="./img/pokemon.mp4" muted autoplay loop type="mp4"></video>
+        <div class="textbox2">
+            <h2>¿DE DONDE SURGIÓ LA IDEA DE LOS POKEMON?</h2>
+            <p>La historia de Pokémon (abreviatura de Pocket Monsters) comienza en Japón, país en el que un amante de
+                los videojuegos llamado Satoshi Tajiri, con apenas 25 años tuvo la idea de diseñar un sistema en el que
+                varios jugadores pudieran interactuar en un mundo compartido.</p>
+
+        </div>
+        <div class="videoBx">
+            <video src="./img/pokemon.mp4" muted autoplay loop type="mp4"></video>
+        </div>
+    </div>
+
+    <div class="banner">
+        <video src="./img/pokemon2.mp4" muted autoplay loop type="mp4"></video>
+        <div class="textbox2">
+            <h2>EL EQUIPO ROCKET</h2>
+            <p>El Team Rocket en España o Equipo Rocket en Hispanoamérica (ロケット団 Roketto-dan en japonés) es una
+                asociación ilícita con fines criminales fundada por Madame Boss y que ahora está bajo el mando de su
+                hijo, Giovanni. Esta organización hace cualquier cosa con tal de ganar dinero. Su negocio más frecuente
+                es el de robar Pokémon para luego venderlos a precios elevados, como lo hacía la cazadora J.</p>
+            <a href="https://www.youtube.com/watch?v=LR9vfQ1J2M4">¡Ve sus mejores momentos!</a>
+        </div>
+        <div class="videoBx">
+            <video src="./img/pokemon2.mp4" muted autoplay loop type="mp4"></video>
+        </div>
+    </div>
+
+
+    <div class="banner">
+        <video src="./img/pokemon3.mp4" muted autoplay loop type="mp4"></video>
+        <div class="textbox2">
+            <h2>EL VALOR DE LA AMISTAD</h2>
+            <p>Cuando un pokemon conoce a su entrenador, es casi seguro que entablezcan una bonita amistad, sin embargo puede que esto no sea
+                tan sencillo desde el principio, tal es el caso de Ash y Charizar, que con el paso del tiempo se
+                convirtieron de los mejores amigos y compañeros, pero sin duda alguna esto no fue sencillo desde el principio.
+            </p>
+        </div>
+        <div class="videoBx">
+            <video src="./img/pokemon3.mp4" muted autoplay loop type="mp4"></video>
+        </div>
+    </div>
+
+    <!--  Otra manera de poner el video es asi:
+        <video onloadedmetadata="this.muted=true" autoplay loop>
+            <source src="/Landing/img/pokemon.mp4">
+        </video> -->
+
+
+
+    <!-- GALERIA DE POKEMONES -->
+
+    <h2 class="title-portafolio" id="Galeria">GALERIA</h2>
+
+    <section class="body-pokemon">
+        <div class="container-pokemon">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/249.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>LUGIA</h3>
+                        <h5>Psiquico//Volador</h5>
+                        <p>La fuerza que tiene Lugia en las alas es devastadora; con nada que las bata es capaz de
+                            derribar edificios enteros. Por eso mismo, prefiere vivir donde no haya nadie, en lo más
+                            profundo del mar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>PSYDUCK</h3>
+                        <h5>Agua</h5>
+                        <p>Sus dolores de cabeza empeoran a medida que aumenta su nivel de estrés. Su increíble poder
+                            psíquico puede causar estragos a su alrededor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/228.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>HOUNDOUR</h3>
+                        <h5>Siniestro//Fuego</h5>
+                        <p>Famoso por su lealtad y ánimo cooperativo. Obedecerá sin dudar todo cuanto le ordene su
+                            Entrenador.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>MEWTWO</h3>
+                        <h5>Psiquico</h5>
+                        <p>Su ADN es casi el mismo que el de Mew. Sin embargo, su tamaño y carácter son muy diferentes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/489.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>PHIONE</h3>
+                        <h5>Agua</h5>
+                        <p>Va a la deriva por mares cálidos. Siempre vuelve a donde nació, por mucho que se haya
+                            alejado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/802.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>MARSHADOW</h3>
+                        <h5>Lucha//Fantasma</h5>
+                        <p>Se oculta en la sombra de su oponente y copia sus movimientos y su fuerza. Su imitación
+                            resulta más poderosa que el original.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>TOTODILE</h3>
+                        <h5>Agua</h5>
+                        <p>Totodile tiene cuerpo pequeño, pero fuertes mandíbulas. A veces, piensa que solo está dando
+                            un mordisquito y hace unas heridas bastante considerables.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/418.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>BUIZEL</h3>
+                        <h5>Agua</h5>
+                        <p>Nada rotando sus dos colas a modo de tornillo. Cuando bucea, el flotador se pliega.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>SNORLAX</h3>
+                        <h5>Normal</h5>
+                        <p>No se encuentra satisfecho hasta haber ingerido 400 kg de comida cada día. Cuando acaba de
+                            comer, se queda dormido.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>GENGAR</h3>
+                        <h5>Fantasma//Veneno</h5>
+                        <p>Las noches de luna llena, a este Pokémon le gusta imitar las sombras de la gente y burlarse
+                            de sus miedos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>UMBREON</h3>
+                        <h5>Siniestro</h5>
+                        <p>Cuando se enfurece, secreta un sudor venenoso por los poros que lanza a los ojos de sus
+                            enemigos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>ARCANINE</h3>
+                        <h5>Fuego</h5>
+                        <p>Muchos han quedado cautivados por su belleza desde la antigüedad. Corre ágilmente como si
+                            tuviera alas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>EEVEE</h3>
+                        <h5>Normal</h5>
+                        <p>Es capaz de alterar la composición de su cuerpo para adaptarse al entorno.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>SQUIRTLE</h3>
+                        <h5>Agua</h5>
+                        <p>Cuando retrae su largo cuello en el caparazón, dispara agua a una presión increíble.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/104.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>CUBONE</h3>
+                        <h5>Tierra</h5>
+                        <p>Cuando llora al acordarse de su madre fallecida, su llanto resuena en el cráneo que lleva en
+                            la cabeza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>MEOWTH</h3>
+                        <h5>Normal</h5>
+                        <p>Le encanta reunir objetos brillantes. Cuando está de buen humor, hasta le muestra la
+                            colección a su Entrenador.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/060.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>POLIWAG</h3>
+                        <h5>Agua</h5>
+                        <p>Es más ágil en el agua que en la tierra. La espiral de su vientre no es más que parte de sus
+                            vísceras que se ven a través de la piel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>GYARADOS</h3>
+                        <h5>Agua</h5>
+                        <p>Es exageradamente agresivo. El Hiperrayo que lanza por la boca reduce a cenizas todo lo que
+                            encuentra.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/172.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>PICHU</h3>
+                        <h5>Electrico</h5>
+                        <p>A pesar de su pequeño tamaño, puede soltar descargas capaces de electrocutar a un adulto, si
+                            bien él también acaba sobresaltado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>CHARIZARD</h3>
+                        <h5>Fuego//Volador</h5>
+                        <p>Sus potentes alas le permiten volar a una altura de 1400 m. Escupe llamaradas que llegan a
+                            alcanzar temperaturas elevadísimas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>CYNDAQUIL</h3>
+                        <h5>Fuego</h5>
+                        <p>Cyndaquil se protege soltando llamas por el lomo. Cuando está enfadado, las llamas son
+                            fieras, pero, si está cansado, solo consigue echar algunas chispas que no llegan a cuajar en
+                            una completa combustión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>RAPIDASH</h3>
+                        <h5>Fuego</h5>
+                        <p>Su ardiente crin ondea al viento mientras atraviesa extensas praderas a una velocidad de 240
+                            km/h.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>PIDGEOTTO</h3>
+                        <h5>Normal//Volador</h5>
+                        <p>Su extraordinaria vitalidad y resistencia le permiten cubrir grandes distancias del
+                            territorio que habita en busca de presas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/244.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>ENTEI</h3>
+                        <h5>Fuego</h5>
+                        <p>Entei contiene el fulgor del magma en su interior. Se cree que este Pokémon nació de la
+                            erupción de un volcán. Escupe numerosas ráfagas de fuego que devoran y reducen a cenizas
+                            todo lo que tocan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/380.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>LATIAS</h3>
+                        <h5>Dragon//Psiquico</h5>
+                        <p>Latias es muy sensible a los sentimientos de la gente. Si detecta algún ápice de hostilidad,
+                            desplegará las plumas que tiene por todo el cuerpo y se pondrá a chillar para intimidar al
+                            enemigo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/722.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>ROWLET</h3>
+                        <h5>Planta//Volador</h5>
+                        <p>Usa sus afiladas plumas como arma arrojadiza y la fuerza de sus patas le permite asestar
+                            poderosas patadas que es mejor no subestimar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/154.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>MEGANIUM</h3>
+                        <h5>Planta</h5>
+                        <p>La fragancia de la flor de Meganium aplaca y suaviza los ánimos. Al luchar, este Pokémon
+                            libera mayor cantidad de esencia para disminuir el ánimo de combate de su oponente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>MEW</h3>
+                        <h5>Psiquico</h5>
+                        <p>Si se observa a través de un microscopio, puede distinguirse cuán corto, fino y delicado es
+                            el pelaje de este Pokémon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/393.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>PIPLUP</h3>
+                        <h5>Agua</h5>
+                        <p>No le gusta que lo cuiden. Como no aprecia el apoyo de su Entrenador, le cuesta coger
+                            confianza con él.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/131.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <h3>LAPRAS</h3>
+                        <h5>Agua//Hielo</h5>
+                        <p>Este Pokémon posee una notable inteligencia y un corazón de oro. Entona un canto melodioso
+                            mientras surca el mar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="Contacto">
+        <div class="footer-content">
+            <h3>POKEMON</h3>
+            <p>Puedes seguirme en mis redes sociales para trabajar juntos;)</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/profile.php?id=100003654763451"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="mailto:alexsanchezdev840@gmail.com?subject=Interesado%20en%20sus%20servicios"><i
+                            class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.instagram.com/alex_okade/?hl=es-la"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/alex-julian-tlaxcala-sanchez-6862aa237/"><i
+                            class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Diseñado por <span>ALEX AMANTEKAYOTL</span>
+            </p>
+            <a href="https://www.flaticon.es/iconos-gratis/pokemon" style="text-decoration: none; color: aliceblue;"
+                title="pokemon iconos">Pokemon iconos creados por
+                Roundicons Freebies - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/google-plus" style="text-decoration: none; color: aliceblue;"
+                title="google plus icons">Google plus icons
+                created by Pixel perfect - Flaticon</a>
+        </div>
+    </footer>
+
+    <!-- FUNCIONABILIDADES -->
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pokemon').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
